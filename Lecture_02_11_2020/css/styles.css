@@ -1,0 +1,28 @@
+
+h2 {
+    color: red;
+}
+
+.title {
+    color: grey;
+}
+
+h2.title {
+    color: blueviolet;
+}
+
+p.title {
+    color: cyan;
+}
+
+#mainTitle {
+    color: salmon !important;   
+}
+
+.text-red {
+    color: rgb(150, 14, 14);
+}
+
+.text-green {
+    color: rgb(171, 253, 48);
+}
