@@ -13,6 +13,8 @@ h2.title {
 
 p.title {
     color: cyan;
+    background: #444;
+    padding: 10px;
 }
 
 #mainTitle {
@@ -25,4 +27,35 @@ p.title {
 
 .text-green {
     color: rgb(171, 253, 48);
+}
+
+.lst-none {
+    list-style: none;
+}
+
+.lst-disc {
+    list-style-type: disc;
+}
+
+/* FRONTEND */
+.frontend {
+    color: crimson;
+}
+
+/* .frontend li {
+    color: darkcyan;
+} */
+
+
+.frontend > li {
+    color: darkcyan;
+}
+
+.frontend > li:last-child,
+.frontend > li:first-child {
+    color: seagreen;
+}
+
+.frontend > li:nth-child(2) {
+    color: tomato;
 }
