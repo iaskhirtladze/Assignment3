@@ -1,0 +1,68 @@
+
+body {
+    background: rgb(69, 187, 120);
+}
+
+.container {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+header nav {
+    padding: 20px 10px;
+    overflow: auto;
+    background-color: lightblue;
+}
+
+.logo {
+    height: 40px;
+    /* width: 45px; */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu .menu__item {
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    line-height: 40px;
+}
+.menu .menu__item:not(:first-child) {
+    margin-left: 10px;
+}
+
+.menu .menu__link {
+    text-decoration: none;
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu .menu__link:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+.m-0 {
+    margin: 0;
+}
+
+.fl-left {
+    float: left;
+}
+.fl-right {
+    float: right;
+}
+.fl-clear {
+    clear: both;
+}
+.text-center {
+    text-align: center;
+}
