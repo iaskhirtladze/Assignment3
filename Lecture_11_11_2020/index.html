@@ -69,19 +69,149 @@
     -->
     <form action="/register" method="GET">
       <!-- <input type="hidden" name="_method" value="PATCH" /> -->
-      <p>FirstName: <input type="text" name="firstname" /></p>
-      <p>LastName: <input type="text" name="lastname" /></p>
-      <p>Email: <input type="email" name="email" required /></p>
-      <p>Password: <input type="password" name="password" required /></p>
+      <fieldset>
+          <legend>General</legend>
+        <p>
+            <label>
+              FirstName: <input type="text" name="firstname" placeholder="John" />
+            </label>
+          </p>
+          <p>
+            <label>
+              LastName: <input type="text" name="lastname" placeholder="Doe" />
+            </label>
+          </p>
+          <p>
+            <label for="fullname">FullName: </label>
+            <input
+              type="text"
+              name="fullname"
+              placeholder="John Doe"
+              id="fullname"
+            />
+          </p>
+          <p>
+            <label for="region">Region: </label>
+            <input
+              type="text"
+              name="region"
+              placeholder="Tbilisi"
+              value="Tbilisi"
+              id="region"
+              disabled
+              readonly
+            />
+          </p>
+      </fieldset>
       <p>
-        Skills: <br />
-        <input type="checkbox" name="skills" id="" value="html" /> html <br />
-        <input type="checkbox" name="skills" id="" value="css" /> css <br />
-        <input type="checkbox" name="skills" id="" value="javascript" />
-        javascript <br />
-        <input type="checkbox" name="skills" id="" value="angular" /> angular
+        <fieldset>
+            <legend>Skills:</legend> 
+            <br />
+        <label>
+          <input type="checkbox" name="skills" id="" value="html" checked />
+          html
+        </label>
         <br />
+        <label>
+          <input type="checkbox" name="skills" id="" value="css" disabled /> css
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" id="" value="javascript" />
+          javascript
+        </label>
+        <br />
+        <label>
+          <input type="checkbox" name="skills" id="" value="angular" /> angular
+        </label>
+        <br />
+        </fieldset>
       </p>
+
+      <p>
+        <fieldset>
+            <legend>Gender</legend>
+            <label for="gender">
+                Male: <input type="radio" name="gender" id="" value="male" />
+              </label>
+              <br />
+              <label for="gender">
+                Female: <input type="radio" name="gender" id="" value="female" />
+              </label>
+              <br />
+              <label for="gender">
+                Other:
+                <input type="radio" name="gender" id="" value="other" checked />
+              </label>
+        </fieldset>
+      </p>
+
+      <p>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" />
+      </p>
+
+      <p>
+        <label for="color">Color:</label>
+        <input type="color" id="color" name="color" />
+      </p>
+
+      <p>
+        <label for="file">File:</label>
+        <!--  MIME -->
+        <input
+          type="file"
+          id="file"
+          name="file"
+          accept="image/jpg,image/png,image/gif"
+        />
+      </p>
+
+      <p>
+        <label for="tech">Tech Industry?:</label>
+        <select id="tech" name="tech" multiple>
+          <option value="frontend">Front-End</option>
+          <option value="backend">Back-End</option>
+          <option value="fullstack">Full Stack</option>
+          <option value="android" selected>Android</option>
+          <option value="ios">iOS</option>
+          <option value="ai">AI</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="bio">Bio:</label>
+        <br />
+        <textarea id="bio" name="bio" rows="5" cols="50" style="resize: none">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corporis consectetur perferendis fugit pariatur tempore labore quos architecto debitis adipisci iste eaque ea numquam, nostrum porro nemo praesentium et molestias!
+        </textarea>
+      </p>
+
+      <p>
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="example@domain.com"
+          />
+        </label>
+      </p>
+      <p>
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="*******"
+            minlength="8"
+          />
+        </label>
+      </p>
+
+
 
       <!--  -->
       <!-- <input type="button" value="Button" />
