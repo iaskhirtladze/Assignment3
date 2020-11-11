@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_09_11_2020</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>სვეტი 1</th>
+          <th>სვეტი 2</th>
+          <th>სვეტი 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>უჯრა 1</td>
+          <td colspan="2" rowspan="2">უჯრა 2</td>
+          <!-- <td>უჯრა 3</td> -->
+        </tr>
+        <tr>
+          <td>უჯრა 1</td>
+          <!-- <td>უჯრა 2</td> -->
+          <!-- <td>უჯრა 3</td> -->
+        </tr>
+        <tr>
+          <td>უჯრა 1</td>
+          <td>უჯრა 2</td>
+          <td>უჯრა 3</td>
+        </tr>
+        <tr>
+          <td rowspan="3">უჯრა 1</td>
+          <td>უჯრა 2</td>
+          <td>უჯრა 3</td>
+        </tr>
+        <tr>
+          <td>უჯრა 1</td>
+          <td>უჯრა 2</td>
+          <!-- <td>უჯრა 3</td> -->
+        </tr>
+        <tr>
+          <td>უჯრა 1</td>
+          <td>უჯრა 2</td>
+          <!-- <td>უჯრა 3</td> -->
+        </tr>
+        <tr>
+          <td>უჯრა 1</td>
+          <td>უჯრა 2</td>
+          <td>უჯრა 3</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+
+    <!-- 
+        HTTP 
+
+        GET,
+        POST,
+
+        PUT,
+        PATCH,
+        DELETE,
+        OPTIONS
+    
+    -->
+    <form action="/register" method="GET">
+      <!-- <input type="hidden" name="_method" value="PATCH" /> -->
+      <p>FirstName: <input type="text" name="firstname" /></p>
+      <p>LastName: <input type="text" name="lastname" /></p>
+      <p>Email: <input type="email" name="email" required /></p>
+      <p>Password: <input type="password" name="password" required /></p>
+      <p>
+        Skills: <br />
+        <input type="checkbox" name="skills" id="" value="html" /> html <br />
+        <input type="checkbox" name="skills" id="" value="css" /> css <br />
+        <input type="checkbox" name="skills" id="" value="javascript" />
+        javascript <br />
+        <input type="checkbox" name="skills" id="" value="angular" /> angular
+        <br />
+      </p>
+
+      <!--  -->
+      <!-- <input type="button" value="Button" />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" /> -->
+      <button type="button">Button</button>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
