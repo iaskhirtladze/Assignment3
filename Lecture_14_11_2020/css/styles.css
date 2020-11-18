@@ -1,0 +1,67 @@
+
+.scroll {
+    height: 1500px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    z-index: 0;
+}
+
+.container {
+    width: 1200px;
+    height: 600px;
+    /* border: 2px solid black; */
+    margin: 0 auto;
+    background-color: blueviolet;
+}
+
+.pos-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.pos-relative {
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.pos-absolute {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.red-box {
+    background: red;
+    top: 0;
+    right: 0;
+    left: unset;
+    top: unset;
+}
+
+
+.example {
+    width: 400px;
+    height: 300px;
+    background-color: #ccc;
+    margin: 0 auto;
+}
+
+/* .red-box:hover + .green-box {
+    left: 200px;
+} */
+
+.green-box {
+    background-color: greenyellow;
+    width: 100px;
+    height: 40px;
+    /* transition: all 300ms cubic-bezier(.17,1.53,.72,-0.13) 1000ms; */
+}
+
+/* transition-duration: 300ms; */
+    /* transition-property: all; */
+    /* transition-timing-function: cubic-bezier(.17,1.53,.72,-0.13); */
+    /* transition-delay: 1000ms; */

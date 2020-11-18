@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLEX</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 1200px;
+        margin: 0 auto;
+      }
+
+      .flex-item {
+        width: 50%;
+        height: 200px;
+        font-size: 3em;
+        text-align: center;
+        color: #fff;
+      }
+      .flex-item:nth-child(1) {
+        background-color: red;
+      }
+      .flex-item:nth-child(2) {
+        background-color: lightblue;
+      }
+      .flex-item:nth-child(3) {
+        background-color: lightgreen;
+      }
+      .flex-item:nth-child(4) {
+        background-color: cadetblue;
+      }
+
+      @media screen and (max-width: 768px) {
+        .flex {
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .flex-item {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
+  </body>
+</html>
