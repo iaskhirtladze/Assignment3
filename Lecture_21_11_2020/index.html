@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_21_11_2020</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <style>
+      :root {
+        font-size: 10px;
+      }
+
+      .flexbox {
+        display: flex;
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid black;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        font-size: 1.5rem;
+        height: 700px;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        /* align-content: flex-end; */
+      }
+      .flex-item {
+        width: 25%;
+        height: 200px;
+        background: cadetblue;
+        font-size: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: 0;
+      }
+
+      .flex-item:nth-child(1) {
+        /* order: 1; */
+      }
+
+      .flex-item:nth-child(2) {
+        /* order: 3; */
+        /* align-self: center; */
+      }
+
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+        border: 1px solid black;
+        min-height: 200px;
+      }
+      .d-flex {
+        display: flex;
+      }
+      .flex-column {
+        flex-direction: column;
+      }
+      .justify-content-between {
+        justify-content: space-between;
+      }
+      .flex-grow-1 {
+        flex: 1 0 33%;
+      }
+
+      .content {
+        height: 200px;
+        width: 100%;
+      }
+
+      .content--item {
+        /* width: 32%; */
+        background: lightblue;
+      }
+
+      .content--item:nth-child(1) {
+        background: red;
+        flex-grow: 2;
+      }
+      .content--item:nth-child(2) {
+        background: yellowgreen;
+      }
+      .content--item:nth-child(3) {
+        background: lightcoral;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+        .content {
+          flex-direction: column;
+          height: auto;
+          align-items: center;
+        }
+
+        .content--item {
+          min-height: 200px;
+          background: cyan;
+          width: 75%;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .content--item {
+          background: lightgreen;
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="flexbox">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+      <div class="flex-item">5</div>
+      <div class="flex-item">6</div>
+    </div> -->
+
+    <div class="container d-flex flex-column">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <div class="d-flex content justify-content-between">
+        <section class="content--item flex-grow-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et inventore
+          a aliquam incidunt aliquid laborum illo dolorem praesentium minima
+          quod, necessitatibus alias ut rerum repellendus sed accusamus ipsam
+          tempore maxime.
+        </section>
+        <section class="content--item flex-grow-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          nam, inventore voluptatem et fugiat quo maiores fugit exercitationem
+          suscipit voluptatibus, aliquam quod possimus totam nobis accusamus at
+          voluptates sit ut!
+        </section>
+        <section class="content--item flex-grow-1">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+          nam, inventore voluptatem et fugiat quo maiores fugit exercitationem
+          suscipit voluptatibus, aliquam quod possimus totam nobis accusamus at
+          voluptates sit ut!
+        </section>
+      </div>
+      <footer>
+        <h2>Footer</h2>
+      </footer>
+    </div>
+  </body>
+</html>
