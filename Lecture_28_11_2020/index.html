@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_28_11_2020</title>
+
+    <script>
+      let message = "My Message"; // string
+      let year = 2020; // number
+      let isAdmin = false; // false|true boolean
+
+      //   console.log(typeof message);
+      //   message = 89890;
+      //   console.log(typeof message);
+
+      //   console.log(message);
+      //   console.log(year);
+
+      //   console.log(typeof message);
+      //   console.log(typeof year);
+      //   console.log(typeof isAdmin);
+
+      //   message = "Updated Message";
+      //   year = 2021;
+      //   isAdmin = true;
+
+      //   console.log(message);
+      //   console.log(year);
+
+      //   let later;
+      //   console.log(later);
+      //   console.log(typeof later);
+
+      //   later = "Later Message";
+
+      //   console.log(later);
+      //   console.log(typeof later);
+
+      //   let x = 0,
+      //     y = 0;
+
+      //   console.log(x + y);
+
+      const promptText = "თქვენი სახელი?";
+      const confimrText = "ეთანხმებით პირობებს.";
+      const userResponse = prompt(promptText, "John");
+
+      const confirmResult = confirm(confimrText);
+      console.log(confirmResult);
+
+      const alertText = "შენი სახელია - " + userResponse;
+
+      alert(alertText);
+    </script>
+  </head>
+  <body>
+    <button onclick="alert('Button Clicked')">Click Me</button>
+  </body>
+</html>
