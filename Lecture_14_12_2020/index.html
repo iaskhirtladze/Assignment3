@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_12_12_2020</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p style="font-size: 1.5em">
+        <span id="rInfo" class="rInfo"><b>r - clear the values</b></span>
+        <br />
+        <span id="cInfo" class="cInfo"><b>c - calculate</b></span>
+      </p>
+      <div class="inputs">
+        <input type="number" placeholder="0" id="input_1" />
+        <select id="operation">
+          <option value="+" selected>+</option>
+          <option value="-">-</option>
+          <option value="/">/</option>
+          <option value="*">*</option>
+          <option value="%">%</option>
+        </select>
+        <input type="number" placeholder="0" id="input_2" />
+      </div>
+      <div id="result" class="result"></div>
+      <div id="actions" class="actions">
+        <button id="calculateButton">Calculate</button
+        ><button id="clearButton">Clear</button>
+      </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
