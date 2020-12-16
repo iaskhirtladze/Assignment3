@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture_14_12_2020</title>
+
+    <style>
+      button {
+        padding: 10px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+      }
+
+      .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(27, 27, 27, 0.6);
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-content {
+        background: #ccc;
+        width: 50%;
+        height: 50%;
+        border-radius: 6px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+      .modal-content h2 {
+        text-align: center;
+      }
+
+      .hidden-modal {
+        display: none;
+      }
+      .visible-modal {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="htmlEventhandler('html event')">HTML EVENT</button>
+    <br />
+    <br />
+
+    <button id="propButton">Event Property Binding</button>
+
+    <hr />
+    <button id="redButton" class="colors">red</button>
+    <button id="greenButton" class="colors">green</button>
+    <button id="blueButton" class="colors">blue</button>
+    <button id="brownButton" class="colors">brown</button>
+    <button id="ygButton" class="colors">yellowgreen</button>
+    <button id="seaGreen" class="colors">seagreen</button>
+    <button id="yellow" class="colors">yellow</button>
+    <!-- <div id="box" class="box"></div> -->
+    <br />
+    <hr />
+    <button class="open-modal">Open Modal</button>
+
+    <div class="modal hidden-modal" id="modal">
+      <section class="modal-content">
+        <header>
+          <h2>Modal Content</h2>
+          <button id="close-modal">Close</button>
+        </header>
+      </section>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
